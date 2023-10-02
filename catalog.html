@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="nav-logo" href="#">
-        <img class="logo" src="#" alt="Логотип города Седона">
+        <img class="logo" src="images\logo-sedona.png" width="140" height="70" alt="Логотип города Седона">
       </a>
 
       <nav class="navigation">
@@ -113,13 +113,13 @@
               <legend class="filter-title">Стоимость, ₽:</legend>
               <ul class="price-list">
                 <li class="price-item">
-                  <input class="price-input" type="number" value="0">
                   <label class="price price-from">
-                  от
-                  </label>   <!--инпут внутри лейбла или под ним? -->
-                  <input class="price-input" type="number" value="9000">
+                    <input class="price-input" type="number" value="0">
+                    от
+                  </label>
                   <label class="price price-to">
-                  до
+                    <input class="price-input" type="number" value="9000">
+                    до
                   </label>
                 </li>
                 <li class="price-item">
@@ -164,7 +164,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-item-link" href="#" tabindex="-1">
-              <img class="catalog-item-image" src="#" alt="Вид из пещеры на звездное небо">
+              <img class="catalog-item-image" src="images\catalog-hotels\hotel-1.jpg" width="300" height="212" alt="Вид из пещеры на звездное небо">
             </a>
             <a class="card-header" href="#" tabindex="-1">
               <h4>Amara Resort & Spa</h4>
@@ -181,7 +181,7 @@
 
           <li class="catalog-item">
             <a class="catalog-item-link" href="#" tabindex="-1">
-              <img class="catalog-item-image" src="#" alt="Радуга над каньоном">
+              <img class="catalog-item-image" src="images\catalog-hotels\hotel-2.jpg" width="300" height="212" alt="Радуга над каньоном">
             </a>
             <a class="card-header" href="#" tabindex="-1">
               <h4>Villas at Poco Diablo</h4>
@@ -198,7 +198,7 @@
 
           <li class="catalog-item">
             <a class="catalog-item-link" href="#" tabindex="-1">
-              <img class="catalog-item-image" src="#" alt="Каньон в ранее утро">
+              <img class="catalog-item-image" src="images\catalog-hotels\hotel-3.jpg" width="300" height="212" alt="Каньон в ранее утро">
             </a>
             <a class="card-header" href="#" tabindex="-1">
               <h4>Desert Quail Inn</h4>
@@ -215,7 +215,7 @@
 
           <li class="catalog-item">
             <a class="catalog-item-link" href="#" tabindex="-1">
-              <img class="catalog-item-image" src="#" alt="Каньон на фоне ночного, усыпанного звездами неба">
+              <img class="catalog-item-image" src="images\catalog-hotels\hotel-4.jpg" width="300" height="212" alt="Каньон на фоне ночного, усыпанного звездами неба">
             </a>
             <a class="card-header" href="#" tabindex="-1">
               <h4>GreenTree Inn</h4>
@@ -259,8 +259,10 @@
         <span>Подпишитесь на рассылку</span>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden">e-mail</label>
-          <input type="email" name="e-mail" placeholder="Ваш e-mail">
+          <label class="visually-hidden">
+            e-mail
+            <input type="email" name="e-mail" placeholder="Ваш e-mail">
+          </label>
 
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
@@ -296,7 +298,7 @@
 
       <div class="copyright">
         <a class="copyright-logo" href="https://htmlacademy.ru/">
-          <img src="#" alt="Логотип компании-копирайт">
+          <img src="images\logo-html-academy.svg" width="115" height="33" alt="Логотип компании-копирайт">
         </a>
       </div>
 
