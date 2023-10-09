@@ -14,12 +14,17 @@
   font-display: swap;
 }
 
+html{
+  background-color: #F2F2F2;
+}
+
 body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .button{
@@ -45,10 +50,6 @@ body{
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-}
-
-.navigation-link-button{
-  color: #ffffff;
 }
 
 .number-of-likes{
@@ -144,7 +145,7 @@ body{
 
 .main-subscribe{
   color: #ffffff;
-  background-color: #000000;;
+  background-color: #000000;
   background-size: 100% auto;
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
@@ -155,7 +156,7 @@ body{
   color: #ffffff;
 }
 
-.e-mail{
+.email{
   font-family: inherit;
   color: #000000;
   font-size: 18px;
