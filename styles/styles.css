@@ -161,10 +161,9 @@ body{
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
   background-size: cover;
-  background-image: url(../images/divider.svg);  /*не отображается*/
-  background-image: url(../images/index-background.jpg);
+  background-image: url(../images/divider.svg), url(../images/index-background.jpg);  /*отображается некорректно*/
   background-repeat: no-repeat;
-  background-position: center bottom, center;
+  background-position: bottom, center;
   padding-top: 51px;
   padding-bottom: 82px;
 }
