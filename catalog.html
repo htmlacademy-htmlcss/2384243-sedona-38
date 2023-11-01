@@ -15,13 +15,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ul>
 
@@ -65,24 +65,24 @@
 
               <h2 class="visually-hidden">Фильтр</h2>
 
-              <fieldset class="filter-group infrastucture-filter">
+              <fieldset class="filter-group filter-group-infrastucture">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
+                    <label>
+                      <input class="checkbox-input" type="checkbox" name="pool" checked>
                       Бассейн
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
+                    <label>
+                      <input class="checkbox-input" type="checkbox" name="parking" checked>
                       Парковка
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
+                    <label>
+                      <input class="checkbox-input" type="checkbox" name="Wi-Fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -93,19 +93,19 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control">
+                    <label>
                       <input class="control-input" type="radio" name="type-group" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
+                    <label>
                       <input class="control-input" type="radio" name="type-group" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
+                    <label>
                       <input class="control-input" type="radio" name="type-group" value="apartments">
                       Апартаменты
                     </label>
@@ -115,7 +115,7 @@
 
               <form class="filter-price" action="https://echo.htmlacademy.ru/" method="get">
 
-                <fieldset class="filter-group price-filter">
+                <fieldset class="filter-group filter-group-price">
                   <legend class="filter-title">Стоимость, ₽:</legend>
                     <ul class="price-list">
                       <li class="price-item">
@@ -161,12 +161,55 @@
             <div class="view-button-box">
               <a class="view-button-link" href="#">
                 <span class="visually-hidden">Показать карточки</span>
+                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_91869_169)">
+                  <path d="M4 0H0V6H4V0Z" fill="black"/>
+                  <path d="M16 0H12V6H16V0Z" fill="black"/>
+                  <path d="M10 0H6V6H10V0Z" fill="black"/>
+                  <path d="M4 8H0V14H4V8Z" fill="black"/>
+                  <path d="M16 8H12V14H16V8Z" fill="black"/>
+                  <path d="M10 8H6V14H10V8Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_91869_169">
+                  <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
               </a>
               <a class="view-button-link view-button-light" href="#">
                 <span class="visually-hidden">Показать в большом формате</span>
+                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_91869_277)">
+                  <path d="M16 12H0V14H16V12Z" fill="black"/>
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_91869_277">
+                  <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
               </a>
               <a class="view-button-link view-button-light" href="#">
                 <span class="visually-hidden">Показать список</span>
+                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_91869_295)">
+                  <path d="M2 0H0V2H2V0Z" fill="black"/>
+                  <path d="M16 0H4V2H16V0Z" fill="black"/>
+                  <path d="M2 4H0V6H2V4Z" fill="black"/>
+                  <path d="M16 4H4V6H16V4Z" fill="black"/>
+                  <path d="M2 8H0V10H2V8Z" fill="black"/>
+                  <path d="M16 8H4V10H16V8Z" fill="black"/>
+                  <path d="M2 12H0V14H2V12Z" fill="black"/>
+                  <path d="M16 12H4V14H16V12Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_91869_295">
+                  <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
               </a>
             </div>
           </div>
@@ -296,7 +339,7 @@
               <label class="visually-hidden" for="email-form">
                 e-mail
               </label>
-              <input class="e-mail" type="email" name="e-mail" id="email-form" placeholder="Ваш e-mail">
+              <input class="e-mail" type="email" name="e-mail" id="email-form" placeholder="Ваш e-mail" required>
               <button class="button subscribe-button" type="submit">Подписаться</button>
             </form>
           </div>
@@ -311,16 +354,25 @@
           <ul class="socials-list">
             <li class="socials-item">
               <a class="socials-link" href="https://vk.com/htmlacademy">
+                <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z" fill="#83B3D3"/>
+                  </svg>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="socials-item">
               <a class="socials-link" href="https://t.me/htmlacademy">
+                <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z" fill="#83B3D3"/>
+                  </svg>
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="socials-item">
               <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" fill="#83B3D3"/>
+                  </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
@@ -331,7 +383,7 @@
           <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
 
-        <div class="copyright">
+        <div class="copyright-logo">
           <a class="copyright-logo" href="https://htmlacademy.ru/">
             <img src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип компании-копирайт">
           </a>
