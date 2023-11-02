@@ -46,17 +46,15 @@ body{
   display: inline-block;
 }
 
-.button:hover{
-  background-color: #68A2CA;
-}
-
+.button:hover,
 .button:focus{
   background-color: #68A2CA;
 }
 
-.button:active{
-  background-color: #68A2CA;
-  color: #FFFFFF4D;
+.button:active,
+.link-button:active,
+.active-button:active{
+  opacity: 0.3;
 }
 
 .button:disabled{
@@ -70,42 +68,18 @@ body{
   cursor: pointer;
 }
 
-.link-button:hover{
-  background-color: #615048;
-}
-
+.link-button:hover,
 .link-button:focus{
   background-color: #615048;
-}
-
-.link-button:active{
-  background-color: #756157;
-  color: #FFFFFF4D;
-}
-
-.link-button:disabled{
-  background-color: #E5E5E5;
 }
 
 .active-button{
   background-color: #7DB54F;
 }
 
-.active-button:hover{
-  background-color: #6C9E42;
-}
-
+.active-button:hover,
 .active-button:focus{
   background-color: #6C9E42;
-}
-
-.active-button:active{
-  background-color: #7DB54F;
-  color: #FFFFFF4D;
-}
-
-.active-button:disabled{
-  background-color: #E5E5E5;
 }
 
 .visually-hidden {
@@ -158,9 +132,14 @@ body{
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  text-transform: capitalize;
   display: block;
   padding: 20px 16px;
   position: relative;
+}
+
+.navigation-link:hover{
+  opacity: 0.6;
 }
 
 .navigation-link-current::after{
@@ -508,10 +487,6 @@ body{
   border-radius: 0px 4px 4px 0px;
 }
 
-.subscribe-button:disabled{
-  background-color: #E5E5E5;
-}
-
 .page-footer{
   display: flex;
   justify-content: space-between;
@@ -535,16 +510,6 @@ body{
   min-width: 47px;
   min-height: 40px;
   text-decoration: none;
-  position: relative;
-}
-
-.socials-link svg{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   color: #83B3D3;
 }
 
@@ -587,14 +552,10 @@ body{
   color: #7561574D;
 }
 
-/*.phone{
-  padding: 5px 194px 5px 195px;
-  margin: 0 auto;
-}*/
-
 .copyright-logo{
   display: block;
   align-self: flex-end;
+  color: #000000;
 }
 
 .filter-content{
@@ -658,32 +619,28 @@ body{
   position: relative;
 }
 
-.breadcrumbs-item::after{
+.breadcrumbs-item::before{
   content: "";
   position: absolute;
   background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 8px;
+  width: 7px;
   height: 10px;
-  top: 3px;
-  right: -18px;
+  top: 7px;
+  left: -17px;
 }
 
-.breadcrumbs-item:last-child::after{
+.breadcrumbs-item:first-child::before{
   content: none;
 }
 
 .breadcrumbs-link:hover{
-  color: #FFFFFF99;
-}
-
-.breadcrumbs-link:focus{
-  color: #FFFFFF;
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:active{
-  color: #FFFFFF4D;
+  opacity: 0.3;
 }
 
 .filter{
@@ -719,10 +676,41 @@ body{
   line-height: 23px;
 }
 
-.checkbox-input{
+.filter-item{
+  margin-bottom: 16px;
+}
+
+.filter-item:last-child{
+  margin-bottom: 0;
+}
+
+.control-input{
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
+  appearance: none;
+  margin: 0;
+  margin-right: 16px;
+}
+
+input[type="checkbox"]{
+  border-radius: 4px;
+}
+
+.filter-group-infrastucture input[checked]{
+  background-image: url(../images/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="radio"]{
+  border-radius: 50%;
+}
+
+.filter-group-apartment input[checked]{
+  background-image: url(../images/tick-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-price{
@@ -738,8 +726,31 @@ body{
   list-style: none;
 }
 
+.price-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-input{
+  appearance: none;
+  width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.price-from .price-input{
+  border-radius: 4px 0 0 4px;
+}
+
+.price-to .price-input{
+  border-radius: 0 4px 4px 0;
+}
+
 .filter-button{
   width: 191px;
+  margin-top: 56px;
   margin-bottom: 32px;
 }
 
@@ -764,10 +775,6 @@ body{
 .filter-button-reset:active{
   background-color: transparent;
   color: #FFFFFF4D;
-}
-
-.filter-button-reset:disabled{
-  background-color: #FFFFFF;
 }
 
 .catalog{
@@ -802,7 +809,7 @@ body{
   appearance: none;
   background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
-  background-position: 260px 20px;
+  background-position: right 20px top 20px;
 }
 
 .select-control:hover{
@@ -830,18 +837,23 @@ body{
   box-sizing: border-box;
   color: #000000;
   text-decoration: none;
-  position: relative;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
 }
 
-.view-button-link svg{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.button-table-view{
+  background-image: url(../images/icon-table-view.svg);
+}
+
+.button-large-view{
+  background-image: url(../images/icon-large-view.svg);
+}
+
+.button-list-view{
+  background-image: url(../images/icon-list-view.svg);
 }
 
 .view-button-link:hover{
