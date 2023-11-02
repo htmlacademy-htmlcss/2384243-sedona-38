@@ -364,6 +364,11 @@ body{
   margin: 30px auto;
 }
 
+.advantages-real-town .caption::after,
+.advantages-devils-bridge .caption::after{
+  border-color: #FFFFFF4D;
+}
+
 .benefits-lead{
   display: block;
   padding-top: 64px;
@@ -540,18 +545,18 @@ body{
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #83B3D3;
+  color: #83B3D3;
 }
 
-.socials-link:hover svg{
-  fill: #68A2CA;
-}
-
-.socials-link:focus svg{
+.socials-link:hover{
   color: #68A2CA;
 }
 
-.socials-link:active svg{
+.socials-link:focus{
+  color: #68A2CA;
+}
+
+.socials-link:active{
   color: #68A2CA4D;
 }
 
@@ -645,7 +650,7 @@ body{
   background-size: 12px 12px;
   width: 13px;
   height: 13px;
-  /*padding-bottom: 2px;*/
+  padding-bottom: 2px;
   background-position: center;
 }
 
@@ -658,9 +663,10 @@ body{
   position: absolute;
   background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   width: 8px;
   height: 10px;
-  top: 2px;
+  top: 3px;
   right: -18px;
 }
 
@@ -738,6 +744,7 @@ body{
 }
 
 .filter-button-reset{
+  border: 3px solid transparent;
   background-color: transparent;
   width: 191px;
 }
@@ -750,7 +757,7 @@ body{
 
 .filter-button-reset:focus{
   background-color: transparent;
-  border: 3px solid #83B3D3;
+  border-color:  #83B3D3;
   border-radius: 4px;
 }
 
@@ -792,6 +799,10 @@ body{
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  appearance: none;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 260px 20px;
 }
 
 .select-control:hover{
@@ -954,6 +965,7 @@ body{
   padding: 11px 0 13px 0;
   box-sizing: border-box;
   background-color: #82B3D3;
+  border: 1px solid #82B3D3;
   border-radius: 4px;
   font-family: inherit;
   color: #ffffff;
@@ -968,6 +980,7 @@ body{
 .pagination-current{
   color: #000000;
   background-color: #F2F2F2;
+  border: none
 }
 
 .pagination-item-next{
@@ -1002,4 +1015,16 @@ body{
 
 .pagination-link:active{
   color: #FFFFFF4D;
+}
+
+.pagination-current:hover{
+  background-color: #F2F2F2;
+}
+
+.pagination-current:focus{
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active{
+  background-color: #F2F2F2;
 }
