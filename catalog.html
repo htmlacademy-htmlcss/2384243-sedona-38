@@ -65,73 +65,87 @@
 
               <h2 class="visually-hidden">Фильтр</h2>
 
-              <fieldset class="filter-group filter-group-infrastucture">
-                <legend class="filter-title">Инфраструктура:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <form class="sorter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="filter-group filter-group-apartment">
-                <legend class="filter-title">Тип жилья:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="radio" name="type-group" value="hotel" checked>
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="radio" name="type-group" value="motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label>
-                      <input class="control-input" type="radio" name="type-group" value="apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                <div class="filter-wrapper">
+                  <fieldset class="filter-group filter-group-infrastucture">
+                    <legend class="filter-title">Инфраструктура:</legend>
+                    <ul class="filter-list">
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                          <span class="checkbox-input"></span>
+                          Бассейн
+                        </label>
+                      </li>
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                          <span class="checkbox-input"></span>
+                          Парковка
+                        </label>
+                      </li>
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                          <span class="checkbox-input"></span>
+                          Wi-Fi
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
 
-              <form class="filter-price" action="https://echo.htmlacademy.ru/" method="get">
+                  <fieldset class="filter-group filter-group-apartment">
+                    <legend class="filter-title">Тип жилья:</legend>
+                    <ul class="filter-list">
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="type-group" value="hotel" checked>
+                          <span class="radio-input"></span>
+                          Гостиница
+                        </label>
+                      </li>
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="type-group" value="motel">
+                          <span class="radio-input"></span>
+                          Мотель
+                        </label>
+                      </li>
+                      <li class="filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="type-group" value="apartments">
+                          <span class="radio-input"></span>
+                          Апартаменты
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
 
                 <fieldset class="filter-group filter-group-price">
                   <legend class="filter-title">Стоимость, ₽:</legend>
-                    <ul class="price-list">
-                      <li class="price-item">
-                        <label class="price price-from">
-                          <input class="price-input" type="number" value="0">
-                          от
-                        </label>
-                        <label class="price price-to">
-                          <input class="price-input" type="number" value="9000">
-                            до
-                        </label>
-                      </li>
-                      <li class="price-item-linear">
-                        <!-- Ползунок -->
-                      </li>
-                    </ul>
+                  <div class="price-wrapper">
+                    <label class="label-from">
+                      <input class="price-input price-input-from" type="number" value="0">
+                      <span class="input-from">от</span>
+                    </label>
+                    <label class="label-to">
+                      <input class="price-input price-input-to" type="number" value="9000">
+                      <span class="input-to">до</span>
+                    </label>
+                  </div>
+
+                  <div class="range">
+                    <div class="range-bar" style="left: 0; width: 226px;">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
 
                 <ul class="filter-buttons">
@@ -160,13 +174,13 @@
             </select>
             <div class="view-button-box">
               <a class="view-button-link button-table-view" href="#">
-                <span class="visually-hidden">Показать карточки</span>
+                <span class="visually-hidden">Показать в виде таблицы</span>
               </a>
               <a class="view-button-link button-large-view" href="#">
                 <span class="visually-hidden">Показать в большом формате</span>
               </a>
               <a class="view-button-link button-list-view" href="#">
-                <span class="visually-hidden">Показать список</span>
+                <span class="visually-hidden">Показать списком</span>
               </a>
             </div>
           </div>
@@ -278,7 +292,7 @@
             </li>
             <li class="pagination-item pagination-item-next">
                 <span class="visually-hidden">Следующая страница</span>
-                <span class="pagination-dots">...</span>
+                ...
             </li>
             <li class="pagination-item">
               <a class="pagination-link last-pagination-link" href="#">10</a>
@@ -356,6 +370,7 @@
         </a>
 
       </footer>
+
     </div>
   </body>
 </html>
