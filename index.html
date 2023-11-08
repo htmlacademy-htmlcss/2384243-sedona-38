@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+  <!--  <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png"> -->
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="page-container">
       <header class="page-header">
         <a class="nav-logo" href="index.html">
-          <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
+          <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
 
         <nav class="navigation">
@@ -63,7 +65,7 @@
                 <h3 class="caption">Настоящий <br>городок</h3>
                 <p class="desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-item-hotel" src="images/advantages-photo-1.jpg" width="800" height="385" alt="Внешний вид одного из отелей городка">
+              <img class="advantages-item-hotel" src="images/advantages-photo-1.jpg" width="800" height="385" alt="Внешний вид одного из отелей городка.">
             </li>
             <li class="advantages-item advantages-small-square">
               <h3 class="caption">Небольшая <br>площадь</h3>
@@ -78,7 +80,7 @@
               <p class="desc">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantages-devils-bridge">
-              <img class="advantages-item-canyon" src="images/advantages-photo-2.jpg" width="800" height="385" alt="Вид со смотровой площадки каньона">
+              <img class="advantages-item-canyon" src="images/advantages-photo-2.jpg" width="800" height="385" alt="Вид со смотровой площадки каньона.">
               <div class="advantages-text">
                 <h3 class="caption">Там есть <br>мост дьявола</h3>
                 <p class="desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -170,7 +172,7 @@
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <a class="copyright-logo" href="https://htmlacademy.ru/">
-          <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg role="img" aria-label="Логотип копирайта." aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" fill="currentColor"/>
             <path d="M26.6 5.15645H21.8V1.45645H19.8V5.25645H17.9V7.25645H19.8V13.2564C19.8 14.9564 20.8 15.9564 22.5 15.9564H26.6V13.9564H22.9C22.2 13.9564 21.8 13.5564 21.8 12.8564V7.15645H26.6V5.15645Z" fill="currentColor"/>
@@ -190,62 +192,65 @@
 
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
+
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
           </button>
+
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="field-group">
-                <label class="modal-label arrival-date-label" for="arrival-date">Дата заезда:</label>
-                <input class="field arrival-field" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" max="27/04/2020" placeholder="Укажите дату" required>
-                <span class="modal-error arrival-date-error">Мы не можем отправить вас в прошлое.</span>
-                <label class="modal-label leaving-date-label" for="leaving-date">Дата выезда:</label>
-                <input class="field leaving-date-field" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" min="1/09/2023" placeholder="Укажите дату" required>
-                <span class="modal-error">На эти даты есть свободные номера. Пока есть.</span>
+              <label class="modal-label arrival-date-label" for="arrival-date">Дата заезда:</label>
+              <input class="field arrival-field" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" max="27/04/2020" placeholder="Укажите дату" required>
+              <span class="modal-error arrival-date-error">Мы не можем отправить вас в прошлое.</span>
+
+              <label class="modal-label leaving-date-label" for="leaving-date">Дата выезда:</label>
+              <input class="field leaving-date-field" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" min="1/09/2023" placeholder="Укажите дату" required>
+              <span class="modal-error">На эти даты есть свободные номера. Пока есть.</span>
+
+              <label class="modal-label adults-label" for="adults">Взрослые:</label>
+              <div class="adults-button-wrapper">
+                <button class="quantity-button minus-button" type="button">
+                  <svg role="img" aria-label="Знак минус." width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input class="quantity-input adults-field" id="adults" type="number" name="adults-number" value="2" max="99">
+                <button class="quantity-button plus-button" type="button">
+                  <svg role="img" aria-label="Знак плюс." width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
               </div>
 
-              <div class="modal-people-wrapper">
-                <p class="field-people">
-                  <label class="modal-label adults-label" for="adults">Взрослые:</label>
-                  <button class="quantity-button minus-button" type="button">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+              <label class="modal-label child-label" for="child">
+                Дети:
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                     </svg>
                   </button>
-                  <input class="quantity-input adults-field" id="adults" type="number" name="adults-number" value="2" max="99">
-                  <button class="quantity-button plus-button" type="button">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
-                </p>
-                <p class="field-people">
-                  <span class="child-label">
-                    <label class="modal-label child-label" for="child">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </span>
-                  </span>
-                  <button class="quantity-button minus-button" type="button">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
-                  <input class="quantity-input child-field" id="child" type="number" name="child" value="2" max="99">
-                  <button class="quantity-button plus-button" type="button">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
-                </p>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </label>
+              <div class="child-button-wrapper">
+                <button class="quantity-button minus-button" type="button">
+                  <svg role="img" aria-label="Знак минус." width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input class="quantity-input child-field" id="child" type="number" name="child" value="2" max="99">
+                <button class="quantity-button plus-button" type="button">
+                  <svg role="img" aria-label="Знак плюс." width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
               </div>
+
+            <div class="search-button-wrapper">
               <button class="button modal-search-button" type="submit">Найти</a>
+            </div>
             </form>
           </section>
         </div>
