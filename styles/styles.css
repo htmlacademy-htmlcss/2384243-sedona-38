@@ -164,9 +164,9 @@ img{
   width: inherit;
   height: 2px;
   background-color: #756257;
-  bottom: -1px;
-  left: 17px;
-  right: 14px;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
 }
 
 .navigation-list {
@@ -246,16 +246,13 @@ img{
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 371px 82px;
   object-fit: cover;
   max-width: 100%;
   height: 100%;
 }
 
 .hero-image {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 }
 
@@ -403,14 +400,14 @@ img{
   flex-direction: column;
   box-sizing: border-box;
   width: 400px;
-  padding: 153px 85px 81px;
+  padding: 81px 85px;
   background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: 50% 80px;
 }
 
 .benefits-item .caption {
-  margin-top: 30px;
+  margin-top: 102px;
   margin-bottom: 30px;
 }
 
@@ -1129,12 +1126,12 @@ img{
 .pagination::before {
   content: "";
   display: block;
-  border-bottom: 0 solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
   width: 100%;
   background-color: #E6E6E6;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 38px;
+  margin-bottom: 31px;
 }
 
 .pagination{
