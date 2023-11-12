@@ -955,11 +955,12 @@ img{
 
 .select-control{
   min-width: 292px;
-  padding: 12px 35px 12px 10px;
+  padding: 12px 35px 12px 18px;
   margin-right: 70px;
   box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
