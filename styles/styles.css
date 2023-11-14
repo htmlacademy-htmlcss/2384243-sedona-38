@@ -241,7 +241,7 @@ img{
 
 .hero {
   color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #B4988D;
   background-size: contain, cover;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
